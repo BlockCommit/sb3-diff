@@ -1,0 +1,1513 @@
+{
+  "items": [
+    {
+      "type": "variable-add",
+      "location": {
+        "targetName": "Stage"
+      },
+      "new": [
+        "公有",
+        0
+      ],
+      "fingerprint": "J!s,+9kn$0iW}_37!NIG"
+    },
+    {
+      "type": "list-add",
+      "location": {
+        "targetName": "Stage"
+      },
+      "new": [
+        "公有列表",
+        []
+      ],
+      "fingerprint": "z(Fte`d.Jw{54(]AO_Yg"
+    },
+    {
+      "type": "script-add",
+      "location": {
+        "targetName": "角色1"
+      },
+      "new": {
+        "block": {
+          "opcode": "event_whenflagclicked",
+          "inputs": {},
+          "fields": {},
+          "next": {
+            "opcode": "motion_movesteps",
+            "inputs": {
+              "STEPS": [
+                1,
+                [
+                  4,
+                  "10"
+                ]
+              ]
+            },
+            "fields": {},
+            "next": {
+              "opcode": "motion_turnright",
+              "inputs": {
+                "DEGREES": [
+                  1,
+                  [
+                    4,
+                    "15"
+                  ]
+                ]
+              },
+              "fields": {},
+              "next": {
+                "opcode": "motion_turnleft",
+                "inputs": {
+                  "DEGREES": [
+                    1,
+                    [
+                      4,
+                      "15"
+                    ]
+                  ]
+                },
+                "fields": {},
+                "next": {
+                  "opcode": "motion_goto",
+                  "inputs": {
+                    "TO": [
+                      1,
+                      "aN"
+                    ]
+                  },
+                  "fields": {},
+                  "next": {
+                    "opcode": "motion_gotoxy",
+                    "inputs": {
+                      "X": [
+                        1,
+                        [
+                          4,
+                          "0"
+                        ]
+                      ],
+                      "Y": [
+                        1,
+                        [
+                          4,
+                          "0"
+                        ]
+                      ]
+                    },
+                    "fields": {},
+                    "next": {
+                      "opcode": "motion_glideto",
+                      "inputs": {
+                        "SECS": [
+                          1,
+                          [
+                            4,
+                            "1"
+                          ]
+                        ],
+                        "TO": [
+                          1,
+                          "aO"
+                        ]
+                      },
+                      "fields": {},
+                      "next": {
+                        "opcode": "motion_glideto",
+                        "inputs": {
+                          "SECS": [
+                            1,
+                            [
+                              4,
+                              "1"
+                            ]
+                          ],
+                          "TO": [
+                            1,
+                            "aP"
+                          ]
+                        },
+                        "fields": {},
+                        "next": {
+                          "opcode": "motion_glidesecstoxy",
+                          "inputs": {
+                            "SECS": [
+                              1,
+                              [
+                                4,
+                                "1"
+                              ]
+                            ],
+                            "X": [
+                              1,
+                              [
+                                4,
+                                "0"
+                              ]
+                            ],
+                            "Y": [
+                              1,
+                              [
+                                4,
+                                "0"
+                              ]
+                            ]
+                          },
+                          "fields": {},
+                          "next": {
+                            "opcode": "motion_pointindirection",
+                            "inputs": {
+                              "DIRECTION": [
+                                3,
+                                "aQ",
+                                [
+                                  8,
+                                  "90"
+                                ]
+                              ]
+                            },
+                            "fields": {},
+                            "next": {
+                              "opcode": "motion_pointtowards",
+                              "inputs": {
+                                "TOWARDS": [
+                                  1,
+                                  "aR"
+                                ]
+                              },
+                              "fields": {},
+                              "next": {
+                                "opcode": "motion_changexby",
+                                "inputs": {
+                                  "DX": [
+                                    1,
+                                    [
+                                      4,
+                                      "10"
+                                    ]
+                                  ]
+                                },
+                                "fields": {},
+                                "next": {
+                                  "opcode": "motion_setx",
+                                  "inputs": {
+                                    "X": [
+                                      3,
+                                      "aS",
+                                      [
+                                        4,
+                                        "0"
+                                      ]
+                                    ]
+                                  },
+                                  "fields": {},
+                                  "next": {
+                                    "opcode": "motion_changeyby",
+                                    "inputs": {
+                                      "DY": [
+                                        1,
+                                        [
+                                          4,
+                                          "10"
+                                        ]
+                                      ]
+                                    },
+                                    "fields": {},
+                                    "next": {
+                                      "opcode": "motion_sety",
+                                      "inputs": {
+                                        "Y": [
+                                          3,
+                                          "aT",
+                                          [
+                                            4,
+                                            "0"
+                                          ]
+                                        ]
+                                      },
+                                      "fields": {},
+                                      "next": {
+                                        "opcode": "motion_ifonedgebounce",
+                                        "inputs": {},
+                                        "fields": {},
+                                        "next": {
+                                          "opcode": "motion_setrotationstyle",
+                                          "inputs": {},
+                                          "fields": {
+                                            "STYLE": [
+                                              "left-right",
+                                              null
+                                            ]
+                                          },
+                                          "next": {
+                                            "opcode": "motion_setrotationstyle",
+                                            "inputs": {},
+                                            "fields": {
+                                              "STYLE": [
+                                                "don't rotate",
+                                                null
+                                              ]
+                                            },
+                                            "next": {
+                                              "opcode": "motion_setrotationstyle",
+                                              "inputs": {},
+                                              "fields": {
+                                                "STYLE": [
+                                                  "all around",
+                                                  null
+                                                ]
+                                              },
+                                              "next": {
+                                                "opcode": "looks_sayforsecs",
+                                                "inputs": {
+                                                  "MESSAGE": [
+                                                    1,
+                                                    [
+                                                      10,
+                                                      "你好！"
+                                                    ]
+                                                  ],
+                                                  "SECS": [
+                                                    1,
+                                                    [
+                                                      4,
+                                                      "2"
+                                                    ]
+                                                  ]
+                                                },
+                                                "fields": {},
+                                                "next": {
+                                                  "opcode": "looks_say",
+                                                  "inputs": {
+                                                    "MESSAGE": [
+                                                      1,
+                                                      [
+                                                        10,
+                                                        "你好！"
+                                                      ]
+                                                    ]
+                                                  },
+                                                  "fields": {},
+                                                  "next": {
+                                                    "opcode": "looks_thinkforsecs",
+                                                    "inputs": {
+                                                      "MESSAGE": [
+                                                        1,
+                                                        [
+                                                          10,
+                                                          "嗯……"
+                                                        ]
+                                                      ],
+                                                      "SECS": [
+                                                        1,
+                                                        [
+                                                          4,
+                                                          "2"
+                                                        ]
+                                                      ]
+                                                    },
+                                                    "fields": {},
+                                                    "next": {
+                                                      "opcode": "looks_think",
+                                                      "inputs": {
+                                                        "MESSAGE": [
+                                                          1,
+                                                          [
+                                                            10,
+                                                            "嗯……"
+                                                          ]
+                                                        ]
+                                                      },
+                                                      "fields": {},
+                                                      "next": {
+                                                        "opcode": "looks_switchcostumeto",
+                                                        "inputs": {
+                                                          "COSTUME": [
+                                                            1,
+                                                            "aU"
+                                                          ]
+                                                        },
+                                                        "fields": {},
+                                                        "next": {
+                                                          "opcode": "looks_nextcostume",
+                                                          "inputs": {},
+                                                          "fields": {},
+                                                          "next": {
+                                                            "opcode": "looks_switchbackdropto",
+                                                            "inputs": {
+                                                              "BACKDROP": [
+                                                                1,
+                                                                "aV"
+                                                              ]
+                                                            },
+                                                            "fields": {},
+                                                            "next": {
+                                                              "opcode": "looks_nextbackdrop",
+                                                              "inputs": {},
+                                                              "fields": {},
+                                                              "next": {
+                                                                "opcode": "looks_changesizeby",
+                                                                "inputs": {
+                                                                  "CHANGE": [
+                                                                    1,
+                                                                    [
+                                                                      4,
+                                                                      "10"
+                                                                    ]
+                                                                  ]
+                                                                },
+                                                                "fields": {},
+                                                                "next": {
+                                                                  "opcode": "looks_setsizeto",
+                                                                  "inputs": {
+                                                                    "SIZE": [
+                                                                      1,
+                                                                      [
+                                                                        4,
+                                                                        "100"
+                                                                      ]
+                                                                    ]
+                                                                  },
+                                                                  "fields": {},
+                                                                  "next": {
+                                                                    "opcode": "looks_changeeffectby",
+                                                                    "inputs": {
+                                                                      "CHANGE": [
+                                                                        1,
+                                                                        [
+                                                                          4,
+                                                                          "25"
+                                                                        ]
+                                                                      ]
+                                                                    },
+                                                                    "fields": {
+                                                                      "EFFECT": [
+                                                                        "COLOR",
+                                                                        null
+                                                                      ]
+                                                                    },
+                                                                    "next": {
+                                                                      "opcode": "looks_seteffectto",
+                                                                      "inputs": {
+                                                                        "VALUE": [
+                                                                          1,
+                                                                          [
+                                                                            4,
+                                                                            "0"
+                                                                          ]
+                                                                        ]
+                                                                      },
+                                                                      "fields": {
+                                                                        "EFFECT": [
+                                                                          "COLOR",
+                                                                          null
+                                                                        ]
+                                                                      },
+                                                                      "next": {
+                                                                        "opcode": "looks_cleargraphiceffects",
+                                                                        "inputs": {},
+                                                                        "fields": {},
+                                                                        "next": {
+                                                                          "opcode": "looks_hide",
+                                                                          "inputs": {},
+                                                                          "fields": {},
+                                                                          "next": {
+                                                                            "opcode": "looks_show",
+                                                                            "inputs": {},
+                                                                            "fields": {},
+                                                                            "next": {
+                                                                              "opcode": "looks_gotofrontback",
+                                                                              "inputs": {},
+                                                                              "fields": {
+                                                                                "FRONT_BACK": [
+                                                                                  "front",
+                                                                                  null
+                                                                                ]
+                                                                              },
+                                                                              "next": {
+                                                                                "opcode": "looks_goforwardbackwardlayers",
+                                                                                "inputs": {
+                                                                                  "NUM": [
+                                                                                    1,
+                                                                                    [
+                                                                                      7,
+                                                                                      "1"
+                                                                                    ]
+                                                                                  ]
+                                                                                },
+                                                                                "fields": {
+                                                                                  "FORWARD_BACKWARD": [
+                                                                                    "forward",
+                                                                                    null
+                                                                                  ]
+                                                                                },
+                                                                                "next": {
+                                                                                  "opcode": "looks_switchcostumeto",
+                                                                                  "inputs": {
+                                                                                    "COSTUME": [
+                                                                                      3,
+                                                                                      "aW",
+                                                                                      "aX"
+                                                                                    ]
+                                                                                  },
+                                                                                  "fields": {},
+                                                                                  "next": {
+                                                                                    "opcode": "looks_switchbackdropto",
+                                                                                    "inputs": {
+                                                                                      "BACKDROP": [
+                                                                                        3,
+                                                                                        "aY",
+                                                                                        "aZ"
+                                                                                      ]
+                                                                                    },
+                                                                                    "fields": {},
+                                                                                    "next": {
+                                                                                      "opcode": "looks_setsizeto",
+                                                                                      "inputs": {
+                                                                                        "SIZE": [
+                                                                                          3,
+                                                                                          "a!",
+                                                                                          [
+                                                                                            4,
+                                                                                            "100"
+                                                                                          ]
+                                                                                        ]
+                                                                                      },
+                                                                                      "fields": {},
+                                                                                      "next": {
+                                                                                        "opcode": "sound_playuntildone",
+                                                                                        "inputs": {
+                                                                                          "SOUND_MENU": [
+                                                                                            1,
+                                                                                            "a#"
+                                                                                          ]
+                                                                                        },
+                                                                                        "fields": {},
+                                                                                        "next": {
+                                                                                          "opcode": "sound_stopallsounds",
+                                                                                          "inputs": {},
+                                                                                          "fields": {},
+                                                                                          "next": {
+                                                                                            "opcode": "sound_play",
+                                                                                            "inputs": {
+                                                                                              "SOUND_MENU": [
+                                                                                                1,
+                                                                                                "a%"
+                                                                                              ]
+                                                                                            },
+                                                                                            "fields": {},
+                                                                                            "next": {
+                                                                                              "opcode": "sound_changeeffectby",
+                                                                                              "inputs": {
+                                                                                                "VALUE": [
+                                                                                                  1,
+                                                                                                  [
+                                                                                                    4,
+                                                                                                    "10"
+                                                                                                  ]
+                                                                                                ]
+                                                                                              },
+                                                                                              "fields": {
+                                                                                                "EFFECT": [
+                                                                                                  "PITCH",
+                                                                                                  null
+                                                                                                ]
+                                                                                              },
+                                                                                              "next": {
+                                                                                                "opcode": "sound_seteffectto",
+                                                                                                "inputs": {
+                                                                                                  "VALUE": [
+                                                                                                    1,
+                                                                                                    [
+                                                                                                      4,
+                                                                                                      "100"
+                                                                                                    ]
+                                                                                                  ]
+                                                                                                },
+                                                                                                "fields": {
+                                                                                                  "EFFECT": [
+                                                                                                    "PITCH",
+                                                                                                    null
+                                                                                                  ]
+                                                                                                },
+                                                                                                "next": {
+                                                                                                  "opcode": "sound_cleareffects",
+                                                                                                  "inputs": {},
+                                                                                                  "fields": {},
+                                                                                                  "next": {
+                                                                                                    "opcode": "sound_changevolumeby",
+                                                                                                    "inputs": {
+                                                                                                      "VOLUME": [
+                                                                                                        1,
+                                                                                                        [
+                                                                                                          4,
+                                                                                                          "-10"
+                                                                                                        ]
+                                                                                                      ]
+                                                                                                    },
+                                                                                                    "fields": {},
+                                                                                                    "next": {
+                                                                                                      "opcode": "sound_setvolumeto",
+                                                                                                      "inputs": {
+                                                                                                        "VOLUME": [
+                                                                                                          3,
+                                                                                                          "a(",
+                                                                                                          [
+                                                                                                            4,
+                                                                                                            "100"
+                                                                                                          ]
+                                                                                                        ]
+                                                                                                      },
+                                                                                                      "fields": {},
+                                                                                                      "next": {
+                                                                                                        "opcode": "event_broadcast",
+                                                                                                        "inputs": {
+                                                                                                          "BROADCAST_INPUT": [
+                                                                                                            1,
+                                                                                                            [
+                                                                                                              11,
+                                                                                                              "消息1",
+                                                                                                              "uK/6$7vU^L-j~oP{}G%r"
+                                                                                                            ]
+                                                                                                          ]
+                                                                                                        },
+                                                                                                        "fields": {},
+                                                                                                        "next": {
+                                                                                                          "opcode": "event_broadcastandwait",
+                                                                                                          "inputs": {
+                                                                                                            "BROADCAST_INPUT": [
+                                                                                                              1,
+                                                                                                              [
+                                                                                                                11,
+                                                                                                                "消息1",
+                                                                                                                "uK/6$7vU^L-j~oP{}G%r"
+                                                                                                              ]
+                                                                                                            ]
+                                                                                                          },
+                                                                                                          "fields": {},
+                                                                                                          "children": []
+                                                                                                        },
+                                                                                                        "children": []
+                                                                                                      },
+                                                                                                      "children": []
+                                                                                                    },
+                                                                                                    "children": []
+                                                                                                  },
+                                                                                                  "children": []
+                                                                                                },
+                                                                                                "children": []
+                                                                                              },
+                                                                                              "children": []
+                                                                                            },
+                                                                                            "children": []
+                                                                                          },
+                                                                                          "children": []
+                                                                                        },
+                                                                                        "children": []
+                                                                                      },
+                                                                                      "children": []
+                                                                                    },
+                                                                                    "children": []
+                                                                                  },
+                                                                                  "children": []
+                                                                                },
+                                                                                "children": []
+                                                                              },
+                                                                              "children": []
+                                                                            },
+                                                                            "children": []
+                                                                          },
+                                                                          "children": []
+                                                                        },
+                                                                        "children": []
+                                                                      },
+                                                                      "children": []
+                                                                    },
+                                                                    "children": []
+                                                                  },
+                                                                  "children": []
+                                                                },
+                                                                "children": []
+                                                              },
+                                                              "children": []
+                                                            },
+                                                            "children": []
+                                                          },
+                                                          "children": []
+                                                        },
+                                                        "children": []
+                                                      },
+                                                      "children": []
+                                                    },
+                                                    "children": []
+                                                  },
+                                                  "children": []
+                                                },
+                                                "children": []
+                                              },
+                                              "children": []
+                                            },
+                                            "children": []
+                                          },
+                                          "children": []
+                                        },
+                                        "children": []
+                                      },
+                                      "children": []
+                                    },
+                                    "children": []
+                                  },
+                                  "children": []
+                                },
+                                "children": []
+                              },
+                              "children": []
+                            },
+                            "children": []
+                          },
+                          "children": []
+                        },
+                        "children": []
+                      },
+                      "children": []
+                    },
+                    "children": []
+                  },
+                  "children": []
+                },
+                "children": []
+              },
+              "children": []
+            },
+            "children": []
+          },
+          "children": []
+        },
+        "targetName": "角色1",
+        "fingerprint": "49f64762"
+      },
+      "fingerprint": "49f64762"
+    },
+    {
+      "type": "script-add",
+      "location": {
+        "targetName": "角色1"
+      },
+      "new": {
+        "block": {
+          "opcode": "event_whenbroadcastreceived",
+          "inputs": {},
+          "fields": {
+            "BROADCAST_OPTION": [
+              "消息1",
+              "uK/6$7vU^L-j~oP{}G%r"
+            ]
+          },
+          "next": {
+            "opcode": "control_wait",
+            "inputs": {
+              "DURATION": [
+                1,
+                [
+                  5,
+                  "1"
+                ]
+              ]
+            },
+            "fields": {},
+            "next": {
+              "opcode": "control_repeat",
+              "inputs": {
+                "TIMES": [
+                  1,
+                  [
+                    6,
+                    "1"
+                  ]
+                ],
+                "SUBSTACK": [
+                  2,
+                  "x"
+                ]
+              },
+              "fields": {},
+              "next": {
+                "opcode": "data_setvariableto",
+                "inputs": {
+                  "VALUE": [
+                    1,
+                    [
+                      10,
+                      "0"
+                    ]
+                  ]
+                },
+                "fields": {
+                  "VARIABLE": [
+                    "公有",
+                    "J!s,+9kn$0iW}_37!NIG"
+                  ]
+                },
+                "next": {
+                  "opcode": "data_changevariableby",
+                  "inputs": {
+                    "VALUE": [
+                      1,
+                      [
+                        4,
+                        "1"
+                      ]
+                    ]
+                  },
+                  "fields": {
+                    "VARIABLE": [
+                      "私有",
+                      "XZf_$TN;rG@|A{:DRfjP"
+                    ]
+                  },
+                  "next": {
+                    "opcode": "data_hidevariable",
+                    "inputs": {},
+                    "fields": {
+                      "VARIABLE": [
+                        "公有",
+                        "J!s,+9kn$0iW}_37!NIG"
+                      ]
+                    },
+                    "next": {
+                      "opcode": "data_showvariable",
+                      "inputs": {},
+                      "fields": {
+                        "VARIABLE": [
+                          "公有",
+                          "J!s,+9kn$0iW}_37!NIG"
+                        ]
+                      },
+                      "next": {
+                        "opcode": "control_create_clone_of",
+                        "inputs": {
+                          "CLONE_OPTION": [
+                            1,
+                            "a}"
+                          ]
+                        },
+                        "fields": {},
+                        "next": {
+                          "opcode": "control_stop",
+                          "inputs": {},
+                          "fields": {
+                            "STOP_OPTION": [
+                              "this script",
+                              null
+                            ]
+                          },
+                          "mutation": {
+                            "tagName": "mutation",
+                            "children": [],
+                            "hasnext": "false"
+                          },
+                          "children": []
+                        },
+                        "children": []
+                      },
+                      "children": []
+                    },
+                    "children": []
+                  },
+                  "children": []
+                },
+                "children": []
+              },
+              "children": []
+            },
+            "children": []
+          },
+          "children": []
+        },
+        "targetName": "角色1",
+        "fingerprint": "2feafe5b"
+      },
+      "fingerprint": "2feafe5b"
+    },
+    {
+      "type": "script-add",
+      "location": {
+        "targetName": "角色1"
+      },
+      "new": {
+        "block": {
+          "opcode": "control_start_as_clone",
+          "inputs": {},
+          "fields": {},
+          "next": {
+            "opcode": "sensing_askandwait",
+            "inputs": {
+              "QUESTION": [
+                3,
+                "av",
+                [
+                  10,
+                  "你叫什么名字？"
+                ]
+              ]
+            },
+            "fields": {},
+            "next": {
+              "opcode": "looks_sayforsecs",
+              "inputs": {
+                "MESSAGE": [
+                  3,
+                  "bg",
+                  [
+                    10,
+                    "你好！"
+                  ]
+                ],
+                "SECS": [
+                  1,
+                  [
+                    4,
+                    "2"
+                  ]
+                ]
+              },
+              "fields": {},
+              "next": {
+                "opcode": "motion_gotoxy",
+                "inputs": {
+                  "X": [
+                    3,
+                    "bi",
+                    [
+                      4,
+                      "0"
+                    ]
+                  ],
+                  "Y": [
+                    3,
+                    "bj",
+                    [
+                      4,
+                      "0"
+                    ]
+                  ]
+                },
+                "fields": {},
+                "next": {
+                  "opcode": "sensing_setdragmode",
+                  "inputs": {},
+                  "fields": {
+                    "DRAG_MODE": [
+                      "draggable",
+                      null
+                    ]
+                  },
+                  "next": {
+                    "opcode": "control_if",
+                    "inputs": {
+                      "SUBSTACK": [
+                        2,
+                        "M"
+                      ],
+                      "CONDITION": [
+                        2,
+                        "au"
+                      ]
+                    },
+                    "fields": {},
+                    "next": {
+                      "opcode": "looks_think",
+                      "inputs": {
+                        "MESSAGE": [
+                          3,
+                          "R",
+                          [
+                            10,
+                            "嗯……"
+                          ]
+                        ]
+                      },
+                      "fields": {},
+                      "next": {
+                        "opcode": "sensing_resettimer",
+                        "inputs": {},
+                        "fields": {},
+                        "next": {
+                          "opcode": "control_delete_this_clone",
+                          "inputs": {},
+                          "fields": {},
+                          "children": []
+                        },
+                        "children": []
+                      },
+                      "children": []
+                    },
+                    "children": []
+                  },
+                  "children": []
+                },
+                "children": []
+              },
+              "children": []
+            },
+            "children": []
+          },
+          "children": []
+        },
+        "targetName": "角色1",
+        "fingerprint": "45b20de6"
+      },
+      "fingerprint": "45b20de6"
+    },
+    {
+      "type": "script-add",
+      "location": {
+        "targetName": "角色1"
+      },
+      "new": {
+        "block": {
+          "opcode": "event_whengreaterthan",
+          "inputs": {
+            "VALUE": [
+              1,
+              [
+                4,
+                "10"
+              ]
+            ]
+          },
+          "fields": {
+            "WHENGREATERTHANMENU": [
+              "TIMER",
+              null
+            ]
+          },
+          "next": {
+            "opcode": "motion_movesteps",
+            "inputs": {
+              "STEPS": [
+                1,
+                [
+                  4,
+                  "10"
+                ]
+              ]
+            },
+            "fields": {},
+            "next": {
+              "opcode": "data_hidelist",
+              "inputs": {},
+              "fields": {
+                "LIST": [
+                  "公有列表",
+                  "z(Fte`d.Jw{54(]AO_Yg"
+                ]
+              },
+              "next": {
+                "opcode": "data_showlist",
+                "inputs": {},
+                "fields": {
+                  "LIST": [
+                    "公有列表",
+                    "z(Fte`d.Jw{54(]AO_Yg"
+                  ]
+                },
+                "next": {
+                  "opcode": "data_addtolist",
+                  "inputs": {
+                    "ITEM": [
+                      1,
+                      [
+                        10,
+                        "东西"
+                      ]
+                    ]
+                  },
+                  "fields": {
+                    "LIST": [
+                      "公有列表",
+                      "z(Fte`d.Jw{54(]AO_Yg"
+                    ]
+                  },
+                  "next": {
+                    "opcode": "control_if",
+                    "inputs": {
+                      "CONDITION": [
+                        2,
+                        "aF"
+                      ],
+                      "SUBSTACK": [
+                        2,
+                        "U"
+                      ]
+                    },
+                    "fields": {},
+                    "next": {
+                      "opcode": "procedures_call",
+                      "inputs": {
+                        "/Epm35G!aj7W]m2KjQZ4": [
+                          1,
+                          [
+                            10,
+                            "1"
+                          ]
+                        ],
+                        "0n7Za5xed/C%ysmEliFI": [
+                          2,
+                          "aI"
+                        ]
+                      },
+                      "fields": {},
+                      "mutation": {
+                        "tagName": "mutation",
+                        "children": [],
+                        "proccode": "刷新 %s %b 文本",
+                        "argumentids": "[\"/Epm35G!aj7W]m2KjQZ4\",\"0n7Za5xed/C%ysmEliFI\"]",
+                        "warp": "false"
+                      },
+                      "next": {
+                        "opcode": "procedures_call",
+                        "inputs": {
+                          "w8th.Ert$U+cni)ltBr-": [
+                            1,
+                            [
+                              10,
+                              "1145"
+                            ]
+                          ],
+                          "8@6EI4O|y2L]b|sI7YTE": [
+                            2,
+                            "aK"
+                          ]
+                        },
+                        "fields": {},
+                        "mutation": {
+                          "tagName": "mutation",
+                          "children": [],
+                          "proccode": "刷nmd新 %s %b 台克斯特",
+                          "argumentids": "[\"w8th.Ert$U+cni)ltBr-\",\"8@6EI4O|y2L]b|sI7YTE\"]",
+                          "warp": "true"
+                        },
+                        "children": []
+                      },
+                      "children": []
+                    },
+                    "children": []
+                  },
+                  "children": []
+                },
+                "children": []
+              },
+              "children": []
+            },
+            "children": []
+          },
+          "children": []
+        },
+        "targetName": "角色1",
+        "fingerprint": "3aed1c10"
+      },
+      "fingerprint": "3aed1c10"
+    },
+    {
+      "type": "script-add",
+      "location": {
+        "targetName": "角色1"
+      },
+      "new": {
+        "block": {
+          "opcode": "event_whenthisspriteclicked",
+          "inputs": {},
+          "fields": {},
+          "next": {
+            "opcode": "motion_turnright",
+            "inputs": {
+              "DEGREES": [
+                1,
+                [
+                  4,
+                  "15"
+                ]
+              ]
+            },
+            "fields": {},
+            "children": []
+          },
+          "children": []
+        },
+        "targetName": "角色1",
+        "fingerprint": "481d595a"
+      },
+      "fingerprint": "481d595a"
+    },
+    {
+      "type": "script-add",
+      "location": {
+        "targetName": "角色1"
+      },
+      "new": {
+        "block": {
+          "opcode": "event_whenbackdropswitchesto",
+          "inputs": {},
+          "fields": {
+            "BACKDROP": [
+              "背景1",
+              null
+            ]
+          },
+          "next": {
+            "opcode": "motion_goto",
+            "inputs": {
+              "TO": [
+                1,
+                "bv"
+              ]
+            },
+            "fields": {},
+            "children": []
+          },
+          "children": []
+        },
+        "targetName": "角色1",
+        "fingerprint": "a671263"
+      },
+      "fingerprint": "a671263"
+    },
+    {
+      "type": "script-add",
+      "location": {
+        "targetName": "角色1"
+      },
+      "new": {
+        "block": {
+          "opcode": "event_whenkeypressed",
+          "inputs": {},
+          "fields": {
+            "KEY_OPTION": [
+              "space",
+              null
+            ]
+          },
+          "next": {
+            "opcode": "motion_turnleft",
+            "inputs": {
+              "DEGREES": [
+                1,
+                [
+                  4,
+                  "15"
+                ]
+              ]
+            },
+            "fields": {},
+            "children": []
+          },
+          "children": []
+        },
+        "targetName": "角色1",
+        "fingerprint": "11745b1d"
+      },
+      "fingerprint": "11745b1d"
+    },
+    {
+      "type": "script-add",
+      "location": {
+        "targetName": "角色1"
+      },
+      "new": {
+        "block": {
+          "opcode": "procedures_definition",
+          "inputs": {
+            "custom_block": [
+              1,
+              "X"
+            ]
+          },
+          "fields": {},
+          "next": {
+            "opcode": "looks_sayforsecs",
+            "inputs": {
+              "MESSAGE": [
+                3,
+                "bD",
+                [
+                  10,
+                  "你好！"
+                ]
+              ],
+              "SECS": [
+                1,
+                [
+                  4,
+                  "2"
+                ]
+              ]
+            },
+            "fields": {},
+            "next": {
+              "opcode": "control_if_else",
+              "inputs": {
+                "CONDITION": [
+                  2,
+                  "bE"
+                ],
+                "SUBSTACK": [
+                  2,
+                  "bF"
+                ],
+                "SUBSTACK2": [
+                  2,
+                  "bG"
+                ]
+              },
+              "fields": {},
+              "children": []
+            },
+            "children": []
+          },
+          "children": []
+        },
+        "targetName": "角色1",
+        "fingerprint": "79964c53"
+      },
+      "fingerprint": "79964c53"
+    },
+    {
+      "type": "script-add",
+      "location": {
+        "targetName": "角色1"
+      },
+      "new": {
+        "block": {
+          "opcode": "procedures_definition",
+          "inputs": {
+            "custom_block": [
+              1,
+              "Z"
+            ]
+          },
+          "fields": {},
+          "next": {
+            "opcode": "looks_say",
+            "inputs": {
+              "MESSAGE": [
+                3,
+                "bK",
+                [
+                  10,
+                  "你好！"
+                ]
+              ]
+            },
+            "fields": {},
+            "next": {
+              "opcode": "control_if_else",
+              "inputs": {
+                "CONDITION": [
+                  2,
+                  "bL"
+                ],
+                "SUBSTACK": [
+                  2,
+                  "bM"
+                ],
+                "SUBSTACK2": [
+                  2,
+                  "bN"
+                ]
+              },
+              "fields": {},
+              "children": []
+            },
+            "children": []
+          },
+          "children": []
+        },
+        "targetName": "角色1",
+        "fingerprint": "610a8e8b"
+      },
+      "fingerprint": "610a8e8b"
+    },
+    {
+      "type": "script-delete",
+      "location": {
+        "targetName": "角色1"
+      },
+      "old": {
+        "block": {
+          "opcode": "event_whenflagclicked",
+          "inputs": {},
+          "fields": {},
+          "next": {
+            "opcode": "looks_say",
+            "inputs": {
+              "MESSAGE": [
+                1,
+                [
+                  10,
+                  "你好！"
+                ]
+              ]
+            },
+            "fields": {},
+            "children": []
+          },
+          "children": []
+        },
+        "targetName": "角色1",
+        "fingerprint": "6b3ac6a"
+      },
+      "fingerprint": "6b3ac6a"
+    },
+    {
+      "type": "variable-add",
+      "location": {
+        "targetName": "角色1"
+      },
+      "new": [
+        "私有",
+        0
+      ],
+      "fingerprint": "XZf_$TN;rG@|A{:DRfjP"
+    },
+    {
+      "type": "list-delete",
+      "location": {
+        "targetName": "角色1"
+      },
+      "old": [
+        "私有列表",
+        [
+          78,
+          91
+        ]
+      ],
+      "fingerprint": "[ji_g80Z}#SULgjbM=%:"
+    },
+    {
+      "type": "list-add",
+      "location": {
+        "targetName": "角色1"
+      },
+      "new": [
+        "私有列表",
+        [
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西",
+          "东西"
+        ]
+      ],
+      "fingerprint": "vL[h`CMi|PT`7`AbDNlx"
+    },
+    {
+      "type": "sound-add",
+      "location": {
+        "targetName": "角色1"
+      },
+      "new": {
+        "name": "Sleeping City Funk",
+        "assetId": "97c6579cdf39e6d30045710ac3c38927",
+        "dataFormat": "wav",
+        "rate": 48000,
+        "sampleCount": 4875075,
+        "md5ext": "97c6579cdf39e6d30045710ac3c38927.wav"
+      },
+      "fingerprint": "97c6579cdf39e6d30045710ac3c38927"
+    }
+  ]
+}

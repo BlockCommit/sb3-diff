@@ -1,0 +1,56 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Test temporary files
+test-temp/
+test-bidirectional-temp/
+simple-test-temp/
+
+# Logs
+logs/
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Package manager files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Test output
+coverage/
+.nyc_output/
+
+# Debug files
+debug-*.json
+debug-*.txt
+
+# Test files
+test-*.mjs
+test-*.cjs
+simple-*.mjs
+simple-*.cjs
+
+# Test project
+test-project/
+
+# Example temp files
+example-temp/

@@ -1,0 +1,49 @@
+# Source files
+src/
+*.ts
+!*.d.ts
+
+# Development files
+*.log
+debug-*.json
+debug-*.txt
+
+# Test files
+test/
+tests/
+*.test.ts
+*.spec.ts
+jest.config.js
+coverage/
+
+# Example files
+exampleSb3/
+examples/
+
+# Documentation (already excluded by package.json files field)
+docs/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build artifacts (except dist which is included)
+dist/**/*.map
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node modules
+node_modules/
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+
+# Misc
+*.md
+!README.md
