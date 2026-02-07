@@ -2,9 +2,9 @@
 
 > Semantic diff tool for Scratch/TurboWarp .sb3 projects
 
-[![NPM Version](https://img.shields.io/npm/v/sb3-diff)](https://www.npmjs.com/package/sb3-diff)
-[![License](https://img.shields.io/npm/l/sb3-diff)](LICENSE)
-[![Node Version](https://img.shields.io/node/v/sb3-diff)](https://nodejs.org)
+[![GitHub Package](https://img.shields.io/badge/GitHub-Package-blue?logo=github)](https://github.com/BlockCommit/sb3-diff/pkgs/npm/@blockcommit%2Fsb3-diff)
+[![License](https://img.shields.io/npm/l/@blockcommit/sb3-diff)](LICENSE)
+[![Node Version](https://img.shields.io/node/v/@blockcommit/sb3-diff)](https://nodejs.org)
 
 一个功能强大的 Scratch/TurboWarp .sb3 项目语义差异工具，可以帮助你比较两个 Scratch 项目之间的差异，包括脚本、积木、变量、列表、造型和声音的变化。
 
@@ -21,17 +21,33 @@
 
 ## 📦 安装
 
-### 通过 npm 安装
+### 通过 GitHub Packages 安装
+
+此包发布在 GitHub Packages，需要先配置认证：
 
 ```bash
-npm install sb3-diff
+# 配置 GitHub Packages 注册表
+echo "@blockcommit:registry=https://npm.pkg.github.com" >> ~/.npmrc
+
+# 配置认证（使用你的 GitHub Personal Access Token）
+echo "//npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN" >> ~/.npmrc
+
+# 安装包
+npm install @blockcommit/sb3-diff
 ```
 
 ### 全局安装（CLI 使用）
 
 ```bash
-npm install -g sb3-diff
+# 配置注册表和认证（如果还没有配置）
+echo "@blockcommit:registry=https://npm.pkg.github.com" >> ~/.npmrc
+echo "//npm.pkg.github.com/:_authToken=YOUR_GITHUB_TOKEN" >> ~/.npmrc
+
+# 全局安装
+npm install -g @blockcommit/sb3-diff
 ```
+
+> 💡 **注意**：将 `YOUR_GITHUB_TOKEN` 替换为你的 GitHub Personal Access Token。需要 `read:packages` 权限。
 
 ## 🚀 使用方法
 
@@ -81,7 +97,7 @@ sb3-diff diff --help
 #### 使用主 API 函数
 
 ```javascript
-import { compareSb3Projects } from 'sb3-diff';
+import { compareSb3Projects } from '@blockcommit/sb3-diff';
 
 const result = await compareSb3Projects('old.sb3', 'new.sb3', {
   outputDiff: 'diff.json',
@@ -104,7 +120,7 @@ import {
   BlockIRBuilder,
   FingerprintGenerator,
   BlockDiffEngine
-} from 'sb3-diff';
+} from '@blockcommit/sb3-diff';
 
 // 提取项目
 const oldRaw = await ProjectExtractor.extractProject('old.sb3');
@@ -185,7 +201,7 @@ console.log(diff.changes);
 ### 克隆仓库
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/BlockCommit/sb3-diff.git
 cd sb3-diff
 ```
 
@@ -194,6 +210,8 @@ cd sb3-diff
 ```bash
 npm install
 ```
+
+> 💡 **注意**：此包发布在 GitHub Packages，不是 npm。如需在本地开发测试，请先配置 GitHub Packages 认证（见上方安装说明）。
 
 ### 构建项目
 
@@ -249,6 +267,8 @@ MIT © NeuronPulse
 
 ## 🔗 相关链接
 
+- [GitHub Packages](https://github.com/BlockCommit/sb3-diff/pkgs/npm/@blockcommit%2Fsb3-diff)
+- [GitHub Repository](https://github.com/BlockCommit/sb3-diff)
 - [Scratch](https://scratch.mit.edu/)
 - [TurboWarp](https://turbowarp.org/)
 - [ScratchBlocks](https://scratchblocks.github.io/)
