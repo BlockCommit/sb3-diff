@@ -3,8 +3,8 @@
 > Semantic diff tool for Scratch/TurboWarp .sb3 projects
 
 [![GitHub Package](https://img.shields.io/badge/GitHub-Package-blue?logo=github)](https://github.com/BlockCommit/sb3-diff/pkgs/npm/@blockcommit%2Fsb3-diff)
-[![License](https://img.shields.io/npm/l/@blockcommit/sb3-diff)](LICENSE)
-[![Node Version](https://img.shields.io/node/v/@blockcommit/sb3-diff)](https://nodejs.org)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Node Version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen)](https://nodejs.org)
 
 一个功能强大的 Scratch/TurboWarp .sb3 项目语义差异工具，可以帮助你比较两个 Scratch 项目之间的差异，包括脚本、积木、变量、列表、造型和声音的变化。
 
